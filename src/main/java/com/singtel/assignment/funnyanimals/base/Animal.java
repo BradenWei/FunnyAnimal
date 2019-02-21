@@ -44,6 +44,13 @@ public class Animal {
     	return singable.isSingable();
     }
     
+    public boolean isSwimable() {
+    	if(swimable == null) {
+			return false;
+		}
+    	return swimable.isSwimable();
+    }
+    
     public String makeSound() {
     	if(singable == null) {
 			return "";
