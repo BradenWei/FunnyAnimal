@@ -8,11 +8,10 @@ import com.singtel.assignment.funnyanimals.base.Walkable;
 public class Bird extends Animal {
 	
 	public Bird() {
-		super(new Walkable(true), new Flyable(true), new Singable(true, "song"));
+		super();
+		super.setFlyable(new Flyable(true));
+		super.setSingable(new Singable(true, "Song"));
+		super.setWalkable(new Walkable(true));		
 	}
 
-	public Bird(Flyable flyable, Singable singable) {
-		super(new Walkable(true), flyable, singable);
-	}
-	
 }
