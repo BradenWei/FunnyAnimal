@@ -18,17 +18,17 @@ public class BirdTest {
 
 	
 	@Test
-	void flyTest() {
+	public void flyTest() {
 		assertTrue(bird.isFlyable());
 	}
 	
 	@Test
-	void walkTest() {
+	public void walkTest() {
 		assertTrue(bird.isWalkable());
 	}
 	
 	@Test
-	void singTest() {
+	public void singTest() {
 		assertTrue(bird.isSingable());
 		assertEquals("Song", bird.makeSound());
 	}
